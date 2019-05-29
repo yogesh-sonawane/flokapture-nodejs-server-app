@@ -1,0 +1,25 @@
+{
+  "name": "flo-kapture-nodejs-server-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app.git"
+  },
+  "keywords": [
+    "Node",
+    "Js",
+    "Server",
+    "Application"
+  ],
+  "author": "Yogesh Sonawane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app/issues"
+  },
+  "homepage": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app#readme"
+}
