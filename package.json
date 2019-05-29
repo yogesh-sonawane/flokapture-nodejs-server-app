@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app/issues"
   },
-  "homepage": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app#readme"
+  "homepage": "https://github.com/yogesh-sonawane/flokapture-nodejs-server-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
