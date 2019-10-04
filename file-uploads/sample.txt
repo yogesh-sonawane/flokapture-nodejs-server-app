@@ -35,7 +35,7 @@ var httpsOptins = {
 
 var portNumber = process.env.PORT || 3000;
 var exressHttpsServer = https.createServer(httpsOptins, app);
-exressHttpsServer.listen(portNumber, "127.0.0.1", function () {
+exressHttpsServer.listen(portNumber, "localhost", function () {
     if (!databaseServer && !global.dbConnection) {
         console.log("\n===================================================\n");
         console.log(`Database connection failed!!!.`);
