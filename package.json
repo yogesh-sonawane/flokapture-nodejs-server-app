@@ -35,6 +35,7 @@
     "unzip": "^0.1.11"
   },
   "devDependencies": {
+    "mongoose-autopopulate": "^0.9.1",
     "request": "^2.88.0"
   }
 }

@@ -1,4 +1,6 @@
-var LanguageMaster = require("../model-schema/language-master-schema");
+var {
+    LanguageMaster
+} = require("../models");
 
 var getAllLanguages = async function (request, response) {
     var languageMasters = await LanguageMaster.find({});
@@ -18,6 +20,8 @@ var findById = async function (request, response) {
     });
     response.status(200).json(languageMaster).end();
 };
-exports.getAllLanguages = getAllLanguages;
-exports.addLanguage = addLanguage;
-exports.findById = findById;
+module.exports = {
+    getAllLanguages,
+    addLanguage,
+    findById
+}

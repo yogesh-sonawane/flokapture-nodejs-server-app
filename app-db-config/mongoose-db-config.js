@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var fs = require('fs');
 
-var mongoPort = 27011;
+var mongoPort = 27000;
 var userName = "yogeshs";
 var password = "yogeshs";
 var mongoHost = "localhost";
