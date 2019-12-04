@@ -32,11 +32,11 @@ var portNumber = process.env.PORT || 3000;
 var exressHttpsServer = https.createServer(httpsOptins, app);
 exressHttpsServer.listen(portNumber, "127.0.0.1", function () {
     if (!databaseServer && !global.dbConnection) {
-        console.log("========================================================================");
+        console.log("==========================================================================");
         console.log(`Database connection failed!!!.  `);
-        console.log("========================================================================");
+        console.log("==========================================================================");
     }
-    console.log("=========================================================================");
+    console.log("===========================================================================");
     console.log(`floKapture Server Application is up and running on port: ${portNumber}`);
-    console.log("=========================================================================");
+    console.log("===========================================================================");
 });
