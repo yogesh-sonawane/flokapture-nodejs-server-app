@@ -6,7 +6,8 @@ var uploadProject = function (request, response) {
         } else {
             console.log(request.uploadDetails);
             response.status(200).send(JSON.stringify({
-                status: "File(s) uploaded successfully"
+                status: "File(s) uploaded successfully",
+                uploadDetails: request.uploadDetails
             }));
         }
     });

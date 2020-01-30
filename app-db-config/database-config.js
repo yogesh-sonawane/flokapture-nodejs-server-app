@@ -9,7 +9,7 @@ var mongoHost = "localhost";
 var dbName = "flokapturedb";
 var mongoDbUrl = `mongodb://${userName}:${password}@${mongoHost}:${mongoPort}/?ssl=true`;
 
-mongoDbOpt = {
+const mongoDbOpt = {
     useNewUrlParser: true,
     "sslValidate": false,
     "sslKey": fs.readFileSync('./certificates/mongodb.pem'),
@@ -28,6 +28,7 @@ exports.dbSetting = DbSetting;
 exports.dbServer = function () {
     Mongoose.Promise = global.Promise;
     Mongoose.set("useFindAndModify", false);
+    Mongoose.set("useUnifiedTopology", true);
     var dbServer = Mongoose.createConnection(mongoDbUrl, mongoDbOpt);
     return dbServer;
 };

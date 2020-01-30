@@ -25,7 +25,9 @@ const workspaceMasterRoutes = [
 
 const projectMasterRoutes = [
     ["api/project-master/add-project", "project-master#addProject", "post"],
-    ["api/project-master/get-all", "project-master#getAll", "get"]
+    ["api/project-master/get-all", "project-master#getAll", "get"],
+    ["api/project-master/start-process", "process-project#startProcess", "post"],
+    ["api/project-master/get-process-steps", "project-master#getProjectProcessSteps", "get"]
 ];
 
 var appRoutes = Array.prototype.concat(homeRoutes,

@@ -36,7 +36,9 @@ exressHttpsServer.listen(portNumber, "127.0.0.1", function () {
         console.log(`Database connection failed!!!.  `);
         console.log("==========================================================================");
     }
+    const address = this.address();
     console.log("===========================================================================");
     console.log(`floKapture Server Application is up and running on port: ${portNumber}`);
+    console.log(JSON.stringify(address));
     console.log("===========================================================================");
 });
